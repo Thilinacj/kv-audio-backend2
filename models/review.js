@@ -23,6 +23,11 @@ const reviewSchema = new mongoose.Schema({
         required : true,
         default : Date.now()
     },
+    isApproved : {
+        type : Boolean,
+        required : true,
+        default : false
+    }
 })
 
 const Review = mongoose.model("Review",reviewSchema)

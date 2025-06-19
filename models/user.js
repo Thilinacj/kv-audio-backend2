@@ -32,6 +32,11 @@ const userSchema = new mongoose.Schema({
         type : String,
         required : true
     },
+    profilePicture : {
+        type : String,
+        required : true,
+        default : "https://www.flaticon.com/free-icon/user-profile_5951752"
+    },
      
 })
 

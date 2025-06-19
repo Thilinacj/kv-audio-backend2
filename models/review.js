@@ -23,6 +23,11 @@ const reviewSchema = new mongoose.Schema({
         required : true,
         default : Date.now()
     },
+    profilePicture : {
+        type : String,
+        required : true,
+        default : "https://www.flaticon.com/free-icon/user-profile_5951752"
+    },
     isApproved : {
         type : Boolean,
         required : true,
